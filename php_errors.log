@@ -1,0 +1,55 @@
+[17-May-2016 10:26:25 UTC] PHP Warning:  Illegal string offset 'dni' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[17-May-2016 10:26:25 UTC] PHP Stack trace:
+[17-May-2016 10:26:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[17-May-2016 10:26:25 UTC] PHP Warning:  Illegal string offset 'nombre' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[17-May-2016 10:26:25 UTC] PHP Stack trace:
+[17-May-2016 10:26:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[17-May-2016 10:26:25 UTC] PHP Warning:  Illegal string offset 'apellidos' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[17-May-2016 10:26:25 UTC] PHP Stack trace:
+[17-May-2016 10:26:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[17-May-2016 10:26:25 UTC] PHP Warning:  Illegal string offset 'datebirthday' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[17-May-2016 10:26:25 UTC] PHP Stack trace:
+[17-May-2016 10:26:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[17-May-2016 10:26:25 UTC] PHP Warning:  Illegal string offset 'sexo' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[17-May-2016 10:26:25 UTC] PHP Stack trace:
+[17-May-2016 10:26:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[17-May-2016 10:26:25 UTC] PHP Warning:  Illegal string offset 'tlf' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[17-May-2016 10:26:25 UTC] PHP Stack trace:
+[17-May-2016 10:26:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[17-May-2016 10:26:25 UTC] PHP Warning:  Illegal string offset 'email' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[17-May-2016 10:26:25 UTC] PHP Stack trace:
+[17-May-2016 10:26:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[17-May-2016 10:26:25 UTC] PHP Warning:  Illegal string offset 'user' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[17-May-2016 10:26:25 UTC] PHP Stack trace:
+[17-May-2016 10:26:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[17-May-2016 10:26:25 UTC] PHP Warning:  Illegal string offset 'pass' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[17-May-2016 10:26:25 UTC] PHP Stack trace:
+[17-May-2016 10:26:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[17-May-2016 18:04:44 UTC] PHP Parse error:  syntax error, unexpected '$resultado' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/form_validations/view/results.php on line 33
+[18-May-2016 18:41:14 UTC] PHP Warning:  Illegal string offset 'dni' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[18-May-2016 18:41:14 UTC] PHP Stack trace:
+[18-May-2016 18:41:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[18-May-2016 18:41:14 UTC] PHP Warning:  Illegal string offset 'nombre' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[18-May-2016 18:41:14 UTC] PHP Stack trace:
+[18-May-2016 18:41:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[18-May-2016 18:41:14 UTC] PHP Warning:  Illegal string offset 'apellidos' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[18-May-2016 18:41:14 UTC] PHP Stack trace:
+[18-May-2016 18:41:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[18-May-2016 18:41:14 UTC] PHP Warning:  Illegal string offset 'datebirthday' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[18-May-2016 18:41:14 UTC] PHP Stack trace:
+[18-May-2016 18:41:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[18-May-2016 18:41:14 UTC] PHP Warning:  Illegal string offset 'sexo' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[18-May-2016 18:41:14 UTC] PHP Stack trace:
+[18-May-2016 18:41:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[18-May-2016 18:41:14 UTC] PHP Warning:  Illegal string offset 'tlf' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[18-May-2016 18:41:14 UTC] PHP Stack trace:
+[18-May-2016 18:41:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[18-May-2016 18:41:14 UTC] PHP Warning:  Illegal string offset 'email' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[18-May-2016 18:41:14 UTC] PHP Stack trace:
+[18-May-2016 18:41:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[18-May-2016 18:41:14 UTC] PHP Warning:  Illegal string offset 'usuario' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[18-May-2016 18:41:14 UTC] PHP Stack trace:
+[18-May-2016 18:41:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0
+[18-May-2016 18:41:14 UTC] PHP Warning:  Illegal string offset 'pass' in /home/ubuntu/workspace/form_validations/view/results.php on line 30
+[18-May-2016 18:41:14 UTC] PHP Stack trace:
+[18-May-2016 18:41:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/form_validations/view/results.php:0

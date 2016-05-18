@@ -1,0 +1,61 @@
+* {font-family:arial;
+    color: #414848;
+}
+*::selection{
+    background:#B7B7B7;
+}
+input[type="text"],input[type="password"]{
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    padding:5;
+    background:#F0F0F0;
+}
+input[type="submit"]{
+    border-radius: 10px 10px 10px 10px;
+    width: 61px;
+    height: 30px;
+    border: 1px solid rgba(256,256,256,0.75);
+    background:#3f9db8;
+    color: white;
+    float: inherit;
+}
+input[type="submit"]:hover{
+    background:#ADD8E6;
+    color: black;
+}
+#asignin{
+    float: right;
+    margin-right: 50px;
+}
+#titul{
+    color:white;
+    font-size: 30;
+    font-family:cursive;
+}
+#formularioborde{
+    width: 500px;
+    border-radius: 0px 0px 20px 20px;
+    background: white;
+    border: none;
+    
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2),  
+                0 1px 1px rgba(0, 0, 0, .2),
+                0 3px 0 #fff,
+                0 4px 0 rgba(0, 0, 0, .2),
+                0 6px 0 #fff,  
+                0 7px 0 rgba(0, 0, 0, .2);
+}
+#titleborder{
+    width: 500px;
+    border-radius: 20px 20px 0px 0px;
+    background: #3f9db8;
+    border: none;
+    padding-top: 10px;
+}
+body{
+    background:#C0C0C0;
+}
+#todoformulario{
+    margin-top: 80px;   
+}
+}
