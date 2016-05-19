@@ -5,16 +5,8 @@
     include('model/validate.inc.php');
     if (isset($_POST['Enviar'])){
         if(val_dni($_POST['dni'])&&val_nombre($_POST['nombre'])&&val_apellidos($_POST['apellidos'])&&val_birthday($_POST['datebirthday'])&&val_phone($_POST['tlf'])&&val_email($_POST['email'])&&val_user($_POST['usuario'])&&val_pass($_POST['pass'])){
-            $user = $_SESSION['user']=$_POST;
-            $_SESSION['dni']=$_POST['dni'];
-            $_SESSION['nombre']=$_POST['nombre'];
-            $_SESSION['apellidos']=$_POST['apellidos'];
-            $_SESSION['datebirthday']=$_POST['datebirthday'];
-            $_SESSION['sexo']=$_POST['sexo'];
-            $_SESSION['tlf']=$_POST['tlf'];
-            $_SESSION['email']=$_POST['email'];
-            $_SESSION['usuario']=$_POST['usuario'];
-            $_SESSION['pass']=$_POST['pass'];
+            $_SESSION['user']=$_POST;
+            
             $callback = 'view/results.php';
             die('<script>top.location.href="'.$callback .'";</script>');
         } else {

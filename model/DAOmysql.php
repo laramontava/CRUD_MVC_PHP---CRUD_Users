@@ -1,15 +1,14 @@
 <?php
-    //include connect.php
+    include ('connectmysql.php');
     
-	class DAOUser{
+	class DAOmysql{
 		function new_user($user){
-			 $sql = "INSERT INTO userapp(dni, name, surname, date_birthday,"
-                . " sexo, mobile, email, user, pass) VALUES ('$user[dni]', '$user[name]', '$user[surname]',"
-                . " '$user[datebirthday]', '$user[sexo]', '$user[tlf]','$user[email]','$user[user]','$user[pass]')";
-            
-            $conexion = Conectar::con();
+			 $sql = "INSERT INTO users(dni, name, surname, date_birthday,"
+                . " sexo, mobile, email, user, pass) VALUES ('".$user['dni']."', '".$user['nombre']."', '".$user['apellidos']."',"
+                . " '".$user['datebirthday']."', '".$user['sexo']."', '".$user['tlf']."','".$user['email']."','".$user['usuario']."','".$user['pass']."')";
+            $conexion = connectmysql::con();
             $res = mysqli_query($conexion, $sql);
-            Conectar::close($conexion);
+            connectmysql::close($conexion);
 			return $res;
 		}
 		
