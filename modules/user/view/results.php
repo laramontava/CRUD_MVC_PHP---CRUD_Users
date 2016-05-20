@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        
-    </head>
-    <body>
         <?php
             include('../../../utils/funct.inc.php');
             include ('../model/DAOmysql.php');
@@ -20,6 +14,4 @@
 				echo 'error';
 			}
         ?>
-        <br><br><a href="../index.php">Volver</a>
-    </body>
-</html>
+        <br><br><a href="../../../index.php">Volver</a>

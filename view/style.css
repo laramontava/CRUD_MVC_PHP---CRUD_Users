@@ -12,13 +12,13 @@ body{
 }
 /*FORMULARIO---------------------------------*/
 input[type="text"],input[type="password"]{
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     text-align: center;
     padding:5;
     background:#F0F0F0;
 }
 input[type="submit"]{
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     width: 61px;
     height: 30px;
     border: 1px solid rgba(256,256,256,0.75);
@@ -58,10 +58,12 @@ input[type="submit"]:hover{
     background: #3f9db8;
     border: none;
     padding-top: 10px;
+    margin-left: 30.13%;
 }
 
 #todoformulario{
-    margin-top: 80px;   
+	margin-top: 50px;
+	align-items: center;
 }
 /*HEADER------------------------------------------*/
 #main-header {
@@ -107,7 +109,7 @@ nav{
 	text-align:center;
 	color:white;
 	padding:40px 20px;
-	border-right:1px solid white;
+	border-right:1px solid #C0C0C0;
 	display:block;
 	float:left;
 }
@@ -165,4 +167,106 @@ nav{
 }
 #signin:hover{
 	background-color:#46ADF3;
+}
+#respoinsivemenu{
+	display: none;
+}
+/*RESPONSIVE --------------------------------*/
+@media (max-width:1312px){
+	#mainmenu{
+		right: 460px;
+	}
+}
+@media (max-width:1288px){
+	#mainmenu{
+		right: 440px;
+	}
+}
+@media (max-width:1261px){
+	#mainmenu{
+		right: 410px;
+	}
+}
+@media (max-width:1230px){
+	#mainmenu{
+		right: 390px;
+	}
+}
+@media (max-width:1210px){
+	#mainmenu{
+		right: 360px;
+	}
+}
+@media (max-width:1180px){
+	#mainmenu{
+		right: 330px;
+	}
+}
+@media (max-width:1150px){
+	#mainmenu{
+		right: 310px;
+	}
+}
+@media (max-width:1130px){
+	#mainmenu{
+		right: 300px;
+	}
+}
+@media (max-width:1120px){
+	#mainmenu{
+		right: 297px;
+	}
+}
+@media (max-width:1117px){
+	#mainmenu{
+		display: none;
+	}
+	#logmenu{
+	    right: 30px;
+	}
+	#respoinsivemenu{
+		display: inherit;
+		padding:30px 20px;
+		right: 300px;
+		border-right:1px solid #C0C0C0;
+		border-left:1px solid #C0C0C0;
+	}
+	#menu2{
+		margin:0;
+		padding:0;
+		list-style-type:none;
+	}
+	#menu2 li{
+		width:100px;
+		text-decoration:none;
+		text-align:center;
+		color:white;
+		padding:10px 20px;
+		display:block;
+		float:right;
+		/*-webkit-transition: all 0.5s ease-out;*/
+	}
+	#menu2 a{
+		color: white;
+		text-decoration:none;
+	}
+	#menu2 li:hover{
+		background-color:#333;
+	}
+	#menu2 li:hover .submenu {
+	  display: block;
+	  max-height: 200px;
+	}
+	
+	.submenu a:hover {
+		background-color:#336699;
+	}
+	.submenu {
+	  overflow: hidden;
+	  max-height: 0;
+	  position: absolute;
+	  background:#333;
+	  padding-left:0px;
+	  /*-webkit-transition: all 0.5s ease-out;*/
+	}
 }
