@@ -1,0 +1,53 @@
+[20-May-2016 00:25:55 UTC] PHP Warning:  include(../utils/funct.inc.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php on line 8
+[20-May-2016 00:25:55 UTC] PHP Stack trace:
+[20-May-2016 00:25:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:0
+[20-May-2016 00:25:55 UTC] PHP Warning:  include(): Failed opening '../utils/funct.inc.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php on line 8
+[20-May-2016 00:25:55 UTC] PHP Stack trace:
+[20-May-2016 00:25:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:0
+[20-May-2016 00:25:55 UTC] PHP Warning:  include(connectmysql.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/frameworkPHPLara/modules/user/model/DAOmysql.php on line 2
+[20-May-2016 00:25:55 UTC] PHP Stack trace:
+[20-May-2016 00:25:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:0
+[20-May-2016 00:25:55 UTC] PHP   2. include() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:9
+[20-May-2016 00:25:55 UTC] PHP Warning:  include(): Failed opening 'connectmysql.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/frameworkPHPLara/modules/user/model/DAOmysql.php on line 2
+[20-May-2016 00:25:55 UTC] PHP Stack trace:
+[20-May-2016 00:25:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:0
+[20-May-2016 00:25:55 UTC] PHP   2. include() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:9
+[20-May-2016 00:25:55 UTC] PHP Fatal error:  Call to undefined function debug() in /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php on line 12
+[20-May-2016 00:25:55 UTC] PHP Stack trace:
+[20-May-2016 00:25:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:0
+[20-May-2016 00:30:52 UTC] PHP Warning:  include(../../../connectmysql.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/frameworkPHPLara/modules/user/model/DAOmysql.php on line 2
+[20-May-2016 00:30:52 UTC] PHP Stack trace:
+[20-May-2016 00:30:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:0
+[20-May-2016 00:30:52 UTC] PHP   2. include() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:9
+[20-May-2016 00:30:52 UTC] PHP Warning:  include(): Failed opening '../../../connectmysql.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/frameworkPHPLara/modules/user/model/DAOmysql.php on line 2
+[20-May-2016 00:30:52 UTC] PHP Stack trace:
+[20-May-2016 00:30:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:0
+[20-May-2016 00:30:52 UTC] PHP   2. include() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:9
+[20-May-2016 00:30:52 UTC] PHP Fatal error:  Class 'connectmysql' not found in /home/ubuntu/workspace/frameworkPHPLara/modules/user/model/DAOmysql.php on line 9
+[20-May-2016 00:30:52 UTC] PHP Stack trace:
+[20-May-2016 00:30:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:0
+[20-May-2016 00:30:52 UTC] PHP   2. DAOmysql->new_user() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:16
+[20-May-2016 00:31:56 UTC] PHP Warning:  include(../../../../connectmysql.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/frameworkPHPLara/modules/user/model/DAOmysql.php on line 2
+[20-May-2016 00:31:56 UTC] PHP Stack trace:
+[20-May-2016 00:31:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:0
+[20-May-2016 00:31:56 UTC] PHP   2. include() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:9
+[20-May-2016 00:31:56 UTC] PHP Warning:  include(): Failed opening '../../../../connectmysql.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/frameworkPHPLara/modules/user/model/DAOmysql.php on line 2
+[20-May-2016 00:31:56 UTC] PHP Stack trace:
+[20-May-2016 00:31:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:0
+[20-May-2016 00:31:56 UTC] PHP   2. include() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:9
+[20-May-2016 00:31:56 UTC] PHP Fatal error:  Class 'connectmysql' not found in /home/ubuntu/workspace/frameworkPHPLara/modules/user/model/DAOmysql.php on line 9
+[20-May-2016 00:31:56 UTC] PHP Stack trace:
+[20-May-2016 00:31:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:0
+[20-May-2016 00:31:56 UTC] PHP   2. DAOmysql->new_user() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:16
+[20-May-2016 00:32:02 UTC] PHP Warning:  include(../../connectmysql.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/frameworkPHPLara/modules/user/model/DAOmysql.php on line 2
+[20-May-2016 00:32:02 UTC] PHP Stack trace:
+[20-May-2016 00:32:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:0
+[20-May-2016 00:32:02 UTC] PHP   2. include() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:9
+[20-May-2016 00:32:02 UTC] PHP Warning:  include(): Failed opening '../../connectmysql.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/frameworkPHPLara/modules/user/model/DAOmysql.php on line 2
+[20-May-2016 00:32:02 UTC] PHP Stack trace:
+[20-May-2016 00:32:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:0
+[20-May-2016 00:32:02 UTC] PHP   2. include() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:9
+[20-May-2016 00:32:02 UTC] PHP Fatal error:  Class 'connectmysql' not found in /home/ubuntu/workspace/frameworkPHPLara/modules/user/model/DAOmysql.php on line 9
+[20-May-2016 00:32:02 UTC] PHP Stack trace:
+[20-May-2016 00:32:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:0
+[20-May-2016 00:32:02 UTC] PHP   2. DAOmysql->new_user() /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/results.php:16

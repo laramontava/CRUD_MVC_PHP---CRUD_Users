@@ -1,0 +1,32 @@
+[19-May-2016 23:50:37 UTC] PHP Warning:  include(model/validate.inc.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php on line 4
+[19-May-2016 23:50:37 UTC] PHP Stack trace:
+[19-May-2016 23:50:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php:0
+[19-May-2016 23:50:37 UTC] PHP Warning:  include(): Failed opening 'model/validate.inc.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php on line 4
+[19-May-2016 23:50:37 UTC] PHP Stack trace:
+[19-May-2016 23:50:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php:0
+[19-May-2016 23:50:37 UTC] PHP Fatal error:  Call to undefined function val_dni() in /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/form.php on line 39
+[19-May-2016 23:50:37 UTC] PHP Stack trace:
+[19-May-2016 23:50:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php:0
+[19-May-2016 23:50:37 UTC] PHP   2. include() /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php:23
+[19-May-2016 23:53:35 UTC] PHP Warning:  include(model/validate.inc.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php on line 4
+[19-May-2016 23:53:35 UTC] PHP Stack trace:
+[19-May-2016 23:53:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php:0
+[19-May-2016 23:53:35 UTC] PHP Warning:  include(): Failed opening 'model/validate.inc.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php on line 4
+[19-May-2016 23:53:35 UTC] PHP Stack trace:
+[19-May-2016 23:53:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php:0
+[19-May-2016 23:53:35 UTC] PHP Warning:  include(view/form.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php on line 23
+[19-May-2016 23:53:35 UTC] PHP Stack trace:
+[19-May-2016 23:53:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php:0
+[19-May-2016 23:53:35 UTC] PHP Warning:  include(): Failed opening 'view/form.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php on line 23
+[19-May-2016 23:53:35 UTC] PHP Stack trace:
+[19-May-2016 23:53:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php:0
+[19-May-2016 23:53:46 UTC] PHP Warning:  include(model/validate.inc.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php on line 4
+[19-May-2016 23:53:46 UTC] PHP Stack trace:
+[19-May-2016 23:53:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php:0
+[19-May-2016 23:53:46 UTC] PHP Warning:  include(): Failed opening 'model/validate.inc.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php on line 4
+[19-May-2016 23:53:46 UTC] PHP Stack trace:
+[19-May-2016 23:53:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php:0
+[19-May-2016 23:53:46 UTC] PHP Fatal error:  Call to undefined function val_dni() in /home/ubuntu/workspace/frameworkPHPLara/modules/user/view/form.php on line 39
+[19-May-2016 23:53:46 UTC] PHP Stack trace:
+[19-May-2016 23:53:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php:0
+[19-May-2016 23:53:46 UTC] PHP   2. include() /home/ubuntu/workspace/frameworkPHPLara/modules/user/controller_user.php:23

@@ -1,5 +1,5 @@
 <?php
-    include ('connectmysql.php');
+    include ('../../../model/connectmysql.php');
     
 	class DAOmysql{
 		function new_user($user){

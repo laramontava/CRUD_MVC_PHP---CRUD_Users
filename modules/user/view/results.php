@@ -5,7 +5,7 @@
     </head>
     <body>
         <?php
-            include('../utils/funct.inc.php');
+            include('../../../utils/funct.inc.php');
             include ('../model/DAOmysql.php');
             session_start();
             $user = ($_SESSION['user']);

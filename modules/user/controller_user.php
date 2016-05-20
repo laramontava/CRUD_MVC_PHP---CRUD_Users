@@ -1,29 +1,12 @@
 <?php
-    include('view/top_page.php');
-    session_start();
-    ?>
-    <div id="wrapper">
-        <div id="header">
-            <?php include('view/header.php'); ?>
-        </div>
-        <div id="contenido">
-        	<?php include("view/pages.php"); ?>        
-            <br style="clear:both;" />
-        </div>
-        <div id="footer">   	   
-	        <?php include("view/footer.php"); ?>        
-        </div>
-    </div>
-<?php include("view/bot_page.php"); ?>    
-    
-    <!--/*
+    //session_start();
     $error = false;
     include('model/validate.inc.php');
     if (isset($_POST['Enviar'])){
         if(val_dni($_POST['dni'])&&val_nombre($_POST['nombre'])&&val_apellidos($_POST['apellidos'])&&val_birthday($_POST['datebirthday'])&&val_phone($_POST['tlf'])&&val_email($_POST['email'])&&val_user($_POST['usuario'])&&val_pass($_POST['pass'])){
             $_SESSION['user']=$_POST;
             
-            $callback = 'view/results.php';
+            $callback = 'modules/user/view/results.php';
             die('<script>top.location.href="'.$callback .'";</script>');
         } else {
             $error_dni = "DNI no v&aacute;lido";
@@ -37,4 +20,4 @@
         }
     }
     
-    include('view/form.php');*/-->
+    include('view/form.php');
