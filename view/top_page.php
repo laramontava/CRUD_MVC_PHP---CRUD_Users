@@ -1,9 +1,9 @@
 <html>
     <head>
         <title>Título</title>
-        
         <meta charset="utf-8">
-        
+        <!-- jQuery library 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
         <link rel="stylesheet" href="view/css/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="view/css/bootstrap/css/bootstrap-theme.css">
         <link rel="stylesheet" href="view/css/bootstrap/css/bootstrap-theme.min.css">

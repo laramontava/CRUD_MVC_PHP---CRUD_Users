@@ -12,8 +12,7 @@
         	<?php 
         	    include('modules/user/controller_user.php');
         	    $controlador = new controller_user();
-        	    include("view/pages.php"); 
-        	    //$controlador->handleRequest();
+        	    include("view/pages.php");
         	?>
             <br style="clear:both;" />
             </fieldset>

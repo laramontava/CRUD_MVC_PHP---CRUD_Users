@@ -6,22 +6,15 @@
         }
         
         public function handleRequest() {
-		/*	if (!isset($_GET['page'])) {
-		        include("view/homepage.php");
-	        } else {*/
-	            $page=$_GET['page'];
-				switch($page){
-                case "index":
-                    include("view/homepage.php");
-                    break;
-                case "sign_up":
-                    $this->saveContact();
-                    break;
-                case "all_users":
-                    $this->listUsers();
-                    break;
-                }
-		    /*}*/
+	        $op=$_GET['op'];
+			switch($op){
+            case "sign_up":
+                $this->saveContact();
+                break;
+            case "list":
+                $this->listUsers();
+                break;
+            }
         }
         public function saveContact() {
             $error = false;

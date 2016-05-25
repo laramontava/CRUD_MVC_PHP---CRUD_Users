@@ -6,12 +6,9 @@
 		//$controlador->handleRequest();
 		$page=$_GET['page'];
 			switch($page){
-            case "sign_up":
-                $controlador->handleRequest();
-                break;
-            case "all_users":
-            	$controlador->handleRequest();
-                break;
+			case "controller_user":
+				$controlador->handleRequest();
+				break;
             }
 	}
 ?>

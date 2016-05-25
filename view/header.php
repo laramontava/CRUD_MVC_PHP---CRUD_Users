@@ -12,13 +12,13 @@
 		    <div class="collapse navbar-collapse" id="myNavbar">
 			    <ul class="nav navbar-nav">
 			      <li class="active"><a href="index.php?">Home</a></li>
-			      <li><a href="index.php?page=all_users">Listar</a></li>
+			      <li><a href="index.php?page=controller_user&op=list">Listar</a></li>
 			      <li><a href="#">Modificar</a></li>
 			      <li><a href="#">Eliminar</a></li>
 			    </ul>
 			    <ul class="nav navbar-nav navbar-right">
 			      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-			      <li><a href="index.php?page=sign_up"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			      <li><a href="index.php?page=controller_user&op=sign_up"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 			    </ul>
 		    </div>
 		  </div>
