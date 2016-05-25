@@ -41,7 +41,6 @@
         }
         
         public function listUsers() {
-            
             include('modules/user/view/list_users.php');
         }
     }

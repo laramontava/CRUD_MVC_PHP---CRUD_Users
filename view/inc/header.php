@@ -11,7 +11,7 @@
 		    </div>
 		    <div class="collapse navbar-collapse" id="myNavbar">
 			    <ul class="nav navbar-nav">
-			      <li class="active"><a href="index.php?">Home</a></li>
+			      <li class="active"><a href="index.php?"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 			      <li><a href="index.php?page=controller_user&op=list">Listar</a></li>
 			      <li><a href="#">Modificar</a></li>
 			      <li><a href="#">Eliminar</a></li>
