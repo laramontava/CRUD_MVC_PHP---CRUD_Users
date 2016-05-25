@@ -15,6 +15,9 @@
 			      <li><a href="index.php?page=controller_user&op=list">Listar</a></li>
 			      <li><a href="#">Modificar</a></li>
 			      <li><a href="#">Eliminar</a></li>
+			      <li><a href="index.php?page=about_us">About us</a></li>
+			      <li><a href="index.php?page=services">Services</a></li>
+			      <li><a href="index.php?page=contact">Contact</a></li>
 			    </ul>
 			    <ul class="nav navbar-nav navbar-right">
 			      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>

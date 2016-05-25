@@ -18,7 +18,7 @@
         }
         public function saveContact() {
             $error = false;
-            include('model/validate.inc.php');
+            include('modules/user/model/validate.inc.php');
             if (isset($_POST['Enviar'])){
                 if(val_dni($_POST['dni'])&&val_nombre($_POST['nombre'])&&val_apellidos($_POST['apellidos'])&&val_birthday($_POST['datebirthday'])&&val_phone($_POST['tlf'])&&val_email($_POST['email'])&&val_user($_POST['usuario'])&&val_pass($_POST['pass'])){
                     $_SESSION['user']=$_POST;
@@ -37,11 +37,11 @@
                 }
             }
             
-            include('view/form.php');
+            include('modules/user/view/form.php');
         }
         
         public function listUsers() {
             
-            include('view/list_users.php');
+            include('modules/user/view/list_users.php');
         }
     }
