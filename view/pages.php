@@ -9,6 +9,9 @@
             case "sign_up":
                 $controlador->handleRequest();
                 break;
+            case "all_users":
+            	$controlador->handleRequest();
+                break;
             }
 	}
 ?>

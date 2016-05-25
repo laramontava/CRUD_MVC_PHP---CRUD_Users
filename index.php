@@ -8,6 +8,7 @@
             <?php include('view/header.php'); ?>
         </div>
         <div id="contenido" class="container-fluid">
+            <fieldset id="field-body">
         	<?php 
         	    include('modules/user/controller_user.php');
         	    $controlador = new controller_user();
@@ -15,6 +16,7 @@
         	    //$controlador->handleRequest();
         	?>
             <br style="clear:both;" />
+            </fieldset>
         </div>
         <div id="footer">   	   
 	        <?php include("view/footer.php"); ?>        

@@ -6,10 +6,10 @@
 }
 body{
     background:#C0C0C0;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 16px;
-    margin-right: 16px;
+    width: 100%;
+}
+#field-body{
+	background:white;
 }
 /*FORMULARIO---------------------------------*/
 input[type="text"],input[type="password"]{
@@ -59,7 +59,6 @@ input[type="submit"]:hover{
     background: #3f9db8;
     border: none;
     padding-top: 10px;
-    margin-left: 30.13%;
 }
 
 #todoformulario{
@@ -71,112 +70,13 @@ input[type="submit"]:hover{
 	background: #333;
 	color: white;
 	width:100%;
-	height: 98px;
-}
-#logo-header{
-	text-decoration:none;
-	
-}
-#titulopagina{
-	padding-top: 10px;
-}
-span.site-name, span.site-desc {
-	color: white;
-}
-div.site-name{
-	/*background: url(title1.png) no-repeat;
-	color: #333;*/
-	font-size: 40;
-	margin-left: 20px;
-}
-span.site-desc{
-	margin-left: 30px;
+	height: 50px;
 }
 .navbar-inverse{
 	background:none;
 	border:none;
 }
-/*MENÚ------------*
-nav{
-	float:right;
-	position: relative;
-	top: -73px;
-	right: 490px;
-}
-#menu{
-	margin:0;
-	padding:0;
-	list-style-type:none;
-}
-#menu li{
-	width:100px;
-	text-decoration:none;
-	text-align:center;
-	color:white;
-	padding:40px 20px;
-	border-right:1px solid #C0C0C0;
-	display:block;
-	float:left;
-}
-#menu li:last-child {
-    border-right:none;
-}
-#menu a{
-	color: white;
-	text-decoration:none;
-	padding:40px 20px;
-}
-#menu li:hover{
-	background-color:#336699;
-	border-bottom:3px solid white;
-}
-#titul{
-    color:white;
-    font-size: 30;
-    font-family:cursive;
-}
-	
-/*MENÚ INICIAR/REGISTRARSE------------	
-#logmenu{
-	margin:0;
-	padding:0;
-	list-style-type:none;
-	right: -530px;
-	top:-51px;
-}
-#logmenu li{
-	width:100px;
-	text-decoration:none;
-	text-align:center;
-	color:white;
-	padding:15px 10px;
-	display:block;
-	float:left;
-}
-#logmenu a{
-	color: white;
-	text-decoration:none;
-}
-#signin{
-	background:#3f9db8;
-	border-radius: 10px;
-	margin-right: 15px;
-	font-size:20px;
-}
-#signup:hover{
-	background-color:#57DE7F;
-}
-#signup{
-	background:#2ecc71;
-	border-radius: 10px;
-	font-size:20px;
-}
-#signin:hover{
-	background-color:#46ADF3;
-}
-#respoinsivemenu{
-	display: none;
-}*/
+
 /*FOOTER------------------------*/
 #footer-top{
 	background:#333;
@@ -184,6 +84,9 @@ nav{
 	height:80px;
 	text-align: center;
 	padding-top: 20px;
+}
+#info{
+	color:white;
 }
 #face{
 	background: url(img/facebook.png) no-repeat;
@@ -197,102 +100,3 @@ nav{
 	padding-left:25px;
 	padding-bottom:35px;
 }
-
-/*RESPONSIVE --------------------------------
-@media (max-width:1312px){
-	#mainmenu{
-		right: 460px;
-	}
-}
-@media (max-width:1288px){
-	#mainmenu{
-		right: 440px;
-	}
-}
-@media (max-width:1261px){
-	#mainmenu{
-		right: 410px;
-	}
-}
-@media (max-width:1230px){
-	#mainmenu{
-		right: 390px;
-	}
-}
-@media (max-width:1210px){
-	#mainmenu{
-		right: 360px;
-	}
-}
-@media (max-width:1180px){
-	#mainmenu{
-		right: 330px;
-	}
-}
-@media (max-width:1150px){
-	#mainmenu{
-		right: 310px;
-	}
-}
-@media (max-width:1130px){
-	#mainmenu{
-		right: 300px;
-	}
-}
-@media (max-width:1120px){
-	#mainmenu{
-		right: 297px;
-	}
-}
-@media (max-width:1117px){
-	#mainmenu{
-		display: none;
-	}
-	#logmenu{
-	    right: 30px;
-	}
-	#respoinsivemenu{
-		display: inherit;
-		padding:30px 20px;
-		right: 250px;
-		border-right:1px solid #C0C0C0;
-		border-left:1px solid #C0C0C0;
-	}
-	#menu2{
-		margin:0;
-		padding:0;
-		list-style-type:none;
-	}
-	#menu2 li{
-		width:100px;
-		text-decoration:none;
-		text-align:center;
-		color:white;
-		padding:10px 20px;
-		display:block;
-		float:right;
-	}
-	#menu2 a{
-		color: white;
-		text-decoration:none;
-	}
-	#main-options{
-		padding:40px 20px;
-	}
-	#menu2 li:hover{
-		background-color:#333;
-	}
-	#menu2 li:hover .submenu {
-	  display: block;
-	  max-height: 200px;
-	  background-color: #3f9db8;
-	}
-	.submenu {
-	  overflow: hidden;
-	  max-height: 0;
-	  position: absolute;
-	  background:#333;
-	  padding-left:0px;
-	  top: 98px;
-	}
-}*/

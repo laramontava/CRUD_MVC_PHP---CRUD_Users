@@ -17,6 +17,9 @@
                 case "sign_up":
                     $this->saveContact();
                     break;
+                case "all_users":
+                    $this->listUsers();
+                    break;
                 }
 		    /*}*/
         }
@@ -42,5 +45,10 @@
             }
             
             include('view/form.php');
+        }
+        
+        public function listUsers() {
+            
+            include('view/list_users.php');
         }
     }

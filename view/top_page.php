@@ -8,6 +8,10 @@
         <link rel="stylesheet" href="view/css/bootstrap/css/bootstrap-theme.css">
         <link rel="stylesheet" href="view/css/bootstrap/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="view/css/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="view/css/bootstrap/css/bootstrap.min.js">
+        <link rel="stylesheet" href="view/css/bootstrap/css/bootstrap.js">
+        <link rel="stylesheet" href="view/css/bootstrap/css/npm.js">
+        <meta name="viewport" content="width=device-width"/>
         <link rel="stylesheet" href="view/css/style.css">
         <script src="model/validate.js"></script>
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
