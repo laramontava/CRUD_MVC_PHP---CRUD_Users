@@ -2,18 +2,9 @@
     <head>
         <title>Título</title>
         <meta charset="utf-8">
-        <!-- jQuery library 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <link rel="stylesheet" href="view/css/bootstrap/css/bootstrap.css">
-        <script src="//http://code.jquery.com/jquery-1.12.4.js"></script>
-        -->
         <link rel="stylesheet" href="view/css/bootstrap/css/bootstrap-theme.css">
         <link rel="stylesheet" href="view/css/bootstrap/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="view/css/bootstrap/css/bootstrap.min.css">
-        
-        <script src="view/css/bootstrap/js/bootstrap.js"></script>
-        <script src="view/css/bootstrap/js/bootstrap.min.js"></script>
-        <script src="view/css/bootstrap/js/npm.js"></script>
         
         <meta name="viewport" content="width=device-width"/>
         <link rel="stylesheet" href="view/css/style.css">
@@ -34,3 +25,7 @@
         </script>
     </head>
     <body>
+        
+        <script src="view/css/bootstrap/js/bootstrap.js"></script>
+        <script src="view/css/bootstrap/js/bootstrap.min.js"></script>
+        <script src="view/css/bootstrap/js/npm.js"></script>

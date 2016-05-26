@@ -2,7 +2,6 @@
 	if (!isset($_GET['page'])) {
 		include("modules/homepage/view/homepage.php");
 	} else {
-		//include("modules/user/".$_GET['page'].".php");
 		$page=$_GET['page'];
 			switch($page){
 			case "controller_user":

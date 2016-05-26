@@ -22,8 +22,8 @@
             if (isset($_POST['Enviar'])){
                 if(val_dni($_POST['dni'])&&val_nombre($_POST['nombre'])&&val_apellidos($_POST['apellidos'])&&val_birthday($_POST['datebirthday'])&&val_phone($_POST['tlf'])&&val_email($_POST['email'])&&val_user($_POST['usuario'])&&val_pass($_POST['pass'])){
                     $_SESSION['user']=$_POST;
-                    
                     $callback = 'modules/user/view/results.php';
+                    //$callback = 'index.php?page=controller_user&op=list';
                     die('<script>top.location.href="'.$callback .'";</script>');
                 } else {
                     $error_dni = "DNI no v&aacute;lido";

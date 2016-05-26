@@ -73,10 +73,12 @@ input[type="submit"]:hover{
 	height: 50px;
 }
 .navbar-inverse{
-	background:none;
+	background-color: #414848;
 	border:none;
 }
-
+#option-menu:hover{
+    background-color: #3498db;
+}
 /*FOOTER------------------------*/
 #footer-top{
 	background:#333;
