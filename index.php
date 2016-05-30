@@ -10,8 +10,8 @@
         <div id="contenido" class="container-fluid">
             <fieldset id="field-body">
         	<?php 
-        	    include('modules/user/controller/controller_user.php');
-        	    $controlador = new controller_user();
+        	    //include('modules/user/controller/controller_user.php');
+        	    //$controlador = new controller_user();
         	    include("view/inc/pages.php");
         	?>
             <br style="clear:both;" />

@@ -13,8 +13,6 @@
 			    <ul class="nav navbar-nav">
 			      <li class="active"><a href="index.php?"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 			      <li id="option-menu"><a href="index.php?page=controller_user&op=list">Listar</a></li>
-			      <li id="option-menu"><a href="#">Modificar</a></li>
-			      <li id="option-menu"><a href="#">Eliminar</a></li>
 			      <li id="option-menu"><a href="index.php?page=about_us">About us</a></li>
 			      <li id="option-menu"><a href="index.php?page=services">Services</a></li>
 			      <li id="option-menu"><a href="index.php?page=contact">Contact</a></li>

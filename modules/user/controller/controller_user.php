@@ -1,4 +1,5 @@
 <?php
+    include_once('modules/user/model/DAOmysql.php');
     class controller_user {
         
         public function __construct() {
@@ -14,6 +15,8 @@
             case "list":
                 $this->listUsers();
                 break;
+            case "read":
+                $this->readUser();
             }
         }
         public function saveContact() {
@@ -42,5 +45,11 @@
         
         public function listUsers() {
             include('modules/user/view/list_users.php');
+        }
+        
+        public function readUser(){
+            $dao = new DAOmysql();
+            $user=$dao->read_users($_GET['user']);
+            include('modules/user/view/read_users.php');
         }
     }

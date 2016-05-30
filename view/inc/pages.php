@@ -1,4 +1,6 @@
 <?php
+	include('modules/user/controller/controller_user.php');
+    $controlador = new controller_user();
 	if (!isset($_GET['page'])) {
 		include("modules/homepage/view/homepage.php");
 	} else {
