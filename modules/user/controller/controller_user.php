@@ -17,6 +17,15 @@
                 break;
             case "read":
                 $this->readUser();
+                break;
+            case "update":
+                $this->updateUser();
+                break;
+            case "delete":
+                $dao = new DAOmysql();
+                $dao->delete_user($_GET['user']);
+                $this->listUsers();
+                break;
             }
         }
         public function saveContact() {
@@ -25,8 +34,10 @@
             if (isset($_POST['Enviar'])){
                 if(val_dni($_POST['dni'])&&val_nombre($_POST['nombre'])&&val_apellidos($_POST['apellidos'])&&val_birthday($_POST['datebirthday'])&&val_phone($_POST['tlf'])&&val_email($_POST['email'])&&val_user($_POST['usuario'])&&val_pass($_POST['pass'])){
                     $_SESSION['user']=$_POST;
-                    $callback = 'modules/user/view/results.php';
-                    //$callback = 'index.php?page=controller_user&op=list';
+                    $daosql = new DAOmysql();
+			        $rdo = $daosql->new_user($_SESSION['user']);
+                    //$callback = 'modules/user/view/results.php';
+                    $callback = 'index.php?page=controller_user&op=list';
                     die('<script>top.location.href="'.$callback .'";</script>');
                 } else {
                     $error_dni = "DNI no v&aacute;lido";
@@ -52,4 +63,11 @@
             $user=$dao->read_users($_GET['user']);
             include('modules/user/view/read_users.php');
         }
+        
+        public function updateUser(){
+            $dao = new DAOmysql();
+            $user=$dao->read_users($_GET['user']);
+            include('modules/user/view/update_users.php');
+        }
+        
     }

@@ -24,9 +24,9 @@
 					echo '<td width=250>';
 					echo '<a class="btn" href="index.php?page=controller_user&op=read&user='.$row['user'].'">Read</a>'; 
 					echo '&nbsp;';
-					echo '<a class="btn btn-success" href="update.php?user='.$row['user'].'">Update</a>';
+					echo '<a class="btn btn-success" href="index.php?page=controller_user&op=update&user='.$row['user'].'">Update</a>';
 					echo '&nbsp;';
-					echo '<a class="btn btn-danger" href="delete.php?user='.$row['user'].'">Delete</a>';
+					echo '<a class="btn btn-danger" href="index.php?page=controller_user&op=delete&user='.$row['user'].'">Delete</a>';
 					echo '</td>';
 					echo '</tr>';
 				}
@@ -40,5 +40,20 @@
 			$res = mysqli_query($con,$sql);
 			$connection->close($con);
 			return mysqli_fetch_object($res);
+		}
+		
+		function update_user(){
+			$conexion = connectmysql::con();
+			$sql = ' FROM users WHERE user = "'.$user.'"';
+			$res = mysqli_query($conexion,$sql);
+			connectmysql::close($conexion);
+		}
+		
+		function delete_user($user){
+			$connection = new connectmysql();
+			$con = $connection->con();
+			$sql = 'DELETE FROM users WHERE user = "'.$user.'"';
+			$res = mysqli_query($con,$sql);
+			$connection->close($con);
 		}
 	}
