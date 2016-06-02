@@ -2,10 +2,6 @@
     include_once('modules/user/model/DAOmysql.php');
     class controller_user {
         
-        public function __construct() {
-            
-        }
-        
         public function handleRequest() {
 	        $op=$_GET['op'];
 			switch($op){
@@ -22,9 +18,7 @@
                 $this->updateUser();
                 break;
             case "delete":
-                $dao = new DAOmysql();
-                $dao->delete_user($_GET['user']);
-                $this->listUsers();
+                $this->deleteUser();
                 break;
             }
         }
@@ -69,7 +63,6 @@
             if (isset($_POST['Enviar_update'])){
                 if(val_dni($_POST['dni'])&&val_nombre($_POST['nombre'])&&val_apellidos($_POST['apellidos'])&&val_birthday($_POST['datebirthday'])&&val_phone($_POST['tlf'])&&val_email($_POST['email'])&&val_user($_POST['usuario'])&&val_pass($_POST['pass'])){
                     $_SESSION['user']=$_POST;
-                    echo $_POST;;
                     $daosql = new DAOmysql();
 			        $rdo = $daosql->update_user($_SESSION['user']);
                     $callback = 'index.php?page=controller_user&op=list';
@@ -88,6 +81,16 @@
             $dao = new DAOmysql();
             $user=$dao->read_users($_GET['user']);
             include('modules/user/view/update_users.php');
+        }
+        
+        public function deleteUser(){
+            if (isset($_POST['confirmar_delete'])){
+                $dao = new DAOmysql();
+                $dao->delete_user($_GET['user']);
+                $callback = 'index.php?page=controller_user&op=list';
+                die('<script>top.location.href="'.$callback .'";</script>');
+            }
+            include('modules/user/view/delete_user.php');
         }
         
     }

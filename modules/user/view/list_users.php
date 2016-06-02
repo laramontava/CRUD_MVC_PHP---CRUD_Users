@@ -1,5 +1,5 @@
-<h1>Lista de usuarios</h1>
 <div class="container">
+	<h1>Lista de usuarios</h1>
 	<table class="table table-hover">
         <thead>
 		    <tr>

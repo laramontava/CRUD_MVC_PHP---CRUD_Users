@@ -36,4 +36,5 @@
   		</tr>
 		</tbody>
 	</table>
+	<a class="btn" href="index.php?page=controller_user&op=list">Volver</a>
 </div>

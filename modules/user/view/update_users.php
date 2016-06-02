@@ -100,6 +100,4 @@
         <input type="submit" name="Enviar_update" value="Update"/>
         <a class="btn" href="index.php?page=controller_user&op=list">Cancel</a>
     </form>
-    <!--<a type="submit" name="Enviar_update" value="Enviar_update" id="Enviar_update" class="btn btn-success">Update</a>-->
-    
 </div>
