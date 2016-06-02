@@ -11,8 +11,9 @@
 		</thead>
 		<tbody>
 		    <?php
-		        $daosql = new DAOmysql();
-			    $daosql->list_users();
+		        /*$daosql = new DAOmysql();
+			    $daosql->list_users();*/
+			    
 		    ?>
 		</tbody>
 		</table>

@@ -1,6 +1,6 @@
 <div class="container">
     <h3>Modificar usuario <?php echo $user->user;?></h3>
-    <form id="updateuser" name="updateuser" method="post" autocomplete="on" onsubmit="return validate_user();" action="">
+    <form id="updateuser" name="updateuser" method="post" autocomplete="on" onsubmit="return validate_user();" action="index.php?page=controller_user&op=update">
         <table>
             <tr>
                 <td>DNI: </td>
@@ -47,10 +47,41 @@
             </tr>
             <tr>
                 <td>Sexo: </td>
+                <?php echo $user->sexo; ?>
                 <td>
-                    <input type="radio" name="sexo" value="Hombre"/>Hombre
-                    <input type="radio" name="sexo" value="Mujer"/>Mujer
-                    <input type="radio" name="sexo" value="Otro" checked/>Otro
+                    <?php
+                    if($user->sexo === "Hombre"){
+                        ?>    
+                        <input type="radio" name="sexo" value="Hombre" checked/>Hombre
+                        <?php
+                    }else{
+                        ?>    
+                        <input type="radio" name="sexo" value="Hombre"/>Hombre
+                        <?php
+                    }
+                    ?>
+                    <?php
+                    if($user->sexo==="Mujer"){
+                        ?>    
+                        <input type="radio" name="sexo" value="Mujer" checked/>Mujer
+                        <?php
+                    }else{
+                        ?>    
+                        <input type="radio" name="sexo" value="Mujer"/>Mujer
+                        <?php
+                    }
+                    ?>
+                    <?php
+                    if($user->sexo==="Otro"){
+                        ?>    
+                        <input type="radio" name="sexo" value="Otro" checked/>Otro
+                        <?php
+                    }else{
+                        ?>    
+                        <input type="radio" name="sexo" value="Otro"/>Otro
+                        <?php
+                    }
+                    ?>
                 </td>
             </tr>
             <tr>

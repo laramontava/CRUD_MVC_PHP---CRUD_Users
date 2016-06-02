@@ -3,7 +3,7 @@
             <fieldset id="titleborder">
                 <div id="titul">Sign Up</div>
             </fieldset>
-            <form id="formuser" name="formuser" method="post" autocomplete="on" onsubmit="return validate_user();" action="">
+            <form id="formuser" name="formuser" method="post" autocomplete="on" onsubmit="return validate_user();" action="index.php?page=controller_user&op=sign_up">
                 <fieldset id="formularioborde">
                 <table>
                     <tr>

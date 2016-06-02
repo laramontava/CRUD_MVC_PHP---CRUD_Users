@@ -44,7 +44,7 @@
 		
 		function update_user($user){
 			$conexion = connectmysql::con();
-			$sql = 'UPDATE users SET dni="'.$user['dni'].'", name="'.$user['nombre'].'", surname="'.$user['apellidos'].'", date_birthday="'.$user['datebirthday'].'", sexo="'.$user['sexo'].'", mobile="'.$user['tlf'].'", email="'.$user['email'].'", user="'.$user['usuario'].'", pass="'.$user['pass'].'" WHERE user = "'.$user['usuario'].'"';
+			$sql = 'UPDATE users SET dni="'.$user['dni'].'", name="'.$user['nombre'].'", surname="'.$user['apellidos'].'", date_birthday="'.$user['datebirthday'].'", sexo="'.$user['sexo'].'", mobile="'.$user['tlf'].'", email="'.$user['email'].'", user="'.$user['usuario'].'", pass="'.$user['pass'].'" WHERE dni = "'.$user['dni'].'"';
 			$res = mysqli_query($conexion,$sql);
 			connectmysql::close($conexion);
 		}

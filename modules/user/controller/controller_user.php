@@ -27,10 +27,18 @@
             include('modules/user/model/validate.inc.php');
             if (isset($_POST['Enviar'])){
                 if(val_dni($_POST['dni'])&&val_nombre($_POST['nombre'])&&val_apellidos($_POST['apellidos'])&&val_birthday($_POST['datebirthday'])&&val_phone($_POST['tlf'])&&val_email($_POST['email'])&&val_user($_POST['usuario'])&&val_pass($_POST['pass'])){
-                    $_SESSION['user']=$_POST;
-                    $daosql = new DAOmysql();
-			        $rdo = $daosql->new_user($_SESSION['user']);
-                    //$callback = 'modules/user/view/results.php';
+                    try{
+                        $_SESSION['user']=$_POST;
+                        $daosql = new DAOmysql();
+    			        $rdo = $daosql->new_user($_SESSION['user']);
+                    }catch(Exception $e){
+                        echo '<script language="javascript">alert("503 internal server error: Error al crear el usuario");</script>'; 
+                        $callback = 'index.php?page=controller_user&op=list';
+                        die('<script>top.location.href="'.$callback .'";</script>');
+                    }
+                    if(!$rdo){
+                        echo '<script language="javascript">alert("503 internal server error: Error al crear el usuario");</script>'; 
+                    }
                     $callback = 'index.php?page=controller_user&op=list';
                     die('<script>top.location.href="'.$callback .'";</script>');
                 } else {
@@ -49,12 +57,25 @@
         }
         
         public function listUsers() {
+            $dao = new DAOmysql();
+            $user=$dao->list_users();
             include('modules/user/view/list_users.php');
         }
         
         public function readUser(){
-            $dao = new DAOmysql();
-            $user=$dao->read_users($_GET['user']);
+            try{
+                $dao = new DAOmysql();
+                $user=$dao->read_users($_GET['user']);
+            }catch(Exception $e){
+                echo '<script language="javascript">alert("503 internal server error: Error al leer los datos del usuario");</script>'; 
+                $callback = 'index.php?page=controller_user&op=list';
+                die('<script>top.location.href="'.$callback .'";</script>');
+            }
+            if(!$user){
+                echo '<script language="javascript">alert("Error al leer los datos del usuario");</script>'; 
+                $callback = 'index.php?page=controller_user&op=list';
+                die('<script>top.location.href="'.$callback .'";</script>');
+            }
             include('modules/user/view/read_users.php');
         }
         
@@ -62,9 +83,18 @@
             include('modules/user/model/validate.inc.php');
             if (isset($_POST['Enviar_update'])){
                 if(val_dni($_POST['dni'])&&val_nombre($_POST['nombre'])&&val_apellidos($_POST['apellidos'])&&val_birthday($_POST['datebirthday'])&&val_phone($_POST['tlf'])&&val_email($_POST['email'])&&val_user($_POST['usuario'])&&val_pass($_POST['pass'])){
-                    $_SESSION['user']=$_POST;
-                    $daosql = new DAOmysql();
-			        $rdo = $daosql->update_user($_SESSION['user']);
+                    try{
+                        $_SESSION['user']=$_POST;
+                        $daosql = new DAOmysql();
+    			        $rdo = $daosql->update_user($_SESSION['user']);
+                    }catch(Exception $e){
+                        echo '<script language="javascript">alert("503 internal server error: Error al modificar el usuario");</script>'; 
+                        $callback = 'index.php?page=controller_user&op=list';
+                        die('<script>top.location.href="'.$callback .'";</script>');
+                    }
+                    if($rdo){
+                        echo '<script language="javascript">alert("503 internal server error: Error al modificar el usuario");</script>';
+                    }
                     $callback = 'index.php?page=controller_user&op=list';
                     die('<script>top.location.href="'.$callback .'";</script>');
                 } else {
@@ -85,10 +115,22 @@
         
         public function deleteUser(){
             if (isset($_POST['confirmar_delete'])){
-                $dao = new DAOmysql();
-                $dao->delete_user($_GET['user']);
-                $callback = 'index.php?page=controller_user&op=list';
-                die('<script>top.location.href="'.$callback .'";</script>');
+                try{
+                    $dao = new DAOmysql();
+                    $error=$dao->delete_user($_GET['user']);
+                }catch(Exception $e){
+                    echo '<script language="javascript">alert("503 internal server error: Error al borrar el usuario");</script>'; 
+                    $callback = 'index.php?page=controller_user&op=list';
+                    die('<script>top.location.href="'.$callback .'";</script>');
+                }
+                if(!$error){
+                    $callback = 'index.php?page=controller_user&op=list';
+                    die('<script>top.location.href="'.$callback .'";</script>');
+                }else{
+                    echo '<script language="javascript">alert("Error al borrar el usuario");</script>'; 
+                    $callback = 'index.php?page=controller_user&op=list';
+                    die('<script>top.location.href="'.$callback .'";</script>');
+                }
             }
             include('modules/user/view/delete_user.php');
         }

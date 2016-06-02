@@ -9,12 +9,12 @@
         </div>
         <div id="contenido" class="container-fluid">
             <fieldset id="field-body">
-        	<?php 
-        	    //include('modules/user/controller/controller_user.php');
-        	    //$controlador = new controller_user();
+            <div class="container">
+        	<?php
         	    include("view/inc/pages.php");
         	?>
             <br style="clear:both;" />
+            </div>
             </fieldset>
         </div>
         <div id="footer">   	   
