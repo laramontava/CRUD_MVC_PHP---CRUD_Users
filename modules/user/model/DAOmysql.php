@@ -42,9 +42,9 @@
 			return mysqli_fetch_object($res);
 		}
 		
-		function update_user(){
+		function update_user($user){
 			$conexion = connectmysql::con();
-			$sql = ' FROM users WHERE user = "'.$user.'"';
+			$sql = 'UPDATE users SET dni="'.$user['dni'].'", name="'.$user['nombre'].'", surname="'.$user['apellidos'].'", date_birthday="'.$user['datebirthday'].'", sexo="'.$user['sexo'].'", mobile="'.$user['tlf'].'", email="'.$user['email'].'", user="'.$user['usuario'].'", pass="'.$user['pass'].'" WHERE user = "'.$user['usuario'].'"';
 			$res = mysqli_query($conexion,$sql);
 			connectmysql::close($conexion);
 		}
