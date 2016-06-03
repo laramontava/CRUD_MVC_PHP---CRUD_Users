@@ -1,5 +1,9 @@
 <?php
-    include('view/inc/top_page.php');
+    if ((isset($_GET['page'])) && ($_GET['page']==="controller_user") ){
+        include('view/inc/top_page_2.php');
+    }else{
+        include('view/inc/top_page.php');
+    }
     
     session_start();
     ?>

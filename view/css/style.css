@@ -1,11 +1,9 @@
 * {font-family:arial;
     color: #414848;
 }
-*::selection{
-    background:#B7B7B7;
-}
+
 body{
-    background:#C0C0C0;
+    background: #DDDED6;
 }
 #field-body{
 	background:white;
