@@ -8,7 +8,6 @@
         
         <meta name="viewport" content="width=device-width"/>
         <link rel="stylesheet" href="view/css/style.css">
-        <script src="model/validate.js"></script>
     </head>
     <body>
         
