@@ -95,3 +95,18 @@ input[type="submit"]:hover{
     float: right;
     margin-right: 100px;
 }
+
+@media (max-width:500px){
+    #info{
+	color:white;
+	margin-left: 0px;
+    }
+    #social{
+        float: right;
+        margin-right: 0px;
+    }
+    #field-body{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
