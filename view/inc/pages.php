@@ -18,6 +18,9 @@
 			case "contact":
 				include("modules/contact/view/contact.php");
 				break;
+			default:
+				include("modules/homepage/view/homepage.php");
+				break;
             }
 	}
 ?>

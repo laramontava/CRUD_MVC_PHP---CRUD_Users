@@ -86,22 +86,14 @@ input[type="submit"]:hover{
 #footer-top{
 	background:#333;
 	color:white;
-	height:80px;
-	text-align: center;
+	height:100px;
 	padding-top: 20px;
 }
 #info{
 	color:white;
+	margin-left: 100px;
 }
-#face{
-	background: url(img/facebook.png) no-repeat;
-	padding-right:25px;
-	padding-left:25px;
-	padding-bottom:35px;
-}
-#twitter{
-	background: url(img/twitter.png) no-repeat;
-	padding-right:25px;
-	padding-left:25px;
-	padding-bottom:35px;
+#social{
+    float: right;
+    margin-right: 100px;
 }

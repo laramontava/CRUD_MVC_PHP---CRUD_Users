@@ -20,6 +20,9 @@
             case "delete":
                 $this->deleteUser();
                 break;
+            default:
+                include('view/inc/404.php');
+                break;
             }
         }
         public function saveUser() {
@@ -57,9 +60,20 @@
         }
         
         public function listUsers() {
-            $dao = new DAOmysql();
-            $user=$dao->list_users();
-            include('modules/user/view/list_users.php');
+            try{
+                $dao = new DAOmysql();
+                $user=$dao->list_users();
+                include('modules/user/view/list_users.php');
+            }catch(Exception $e){
+                echo '<script language="javascript">alert("503 internal server error: Error al obtener la lista de usuarios");</script>'; 
+                $callback = 'index.php?';
+                die('<script>top.location.href="'.$callback .'";</script>');
+            }
+            if(!$user){
+                echo '<script language="javascript">alert("503 internal server error: Error al obtener la lista de usuarios");</script>'; 
+                $callback = 'index.php?';
+                die('<script>top.location.href="'.$callback .'";</script>');
+            }
         }
         
         public function readUser(){
@@ -92,7 +106,7 @@
                         $callback = 'index.php?page=controller_user&op=list';
                         die('<script>top.location.href="'.$callback .'";</script>');
                     }
-                    if($rdo){
+                    if(!$rdo){
                         echo '<script language="javascript">alert("503 internal server error: Error al modificar el usuario");</script>';
                     }
                     $callback = 'index.php?page=controller_user&op=list';
@@ -108,9 +122,20 @@
                     $error_pass = "Contrase&ntilde;a no v&aacute;lida";
                 }
             }
-            $dao = new DAOmysql();
-            $user=$dao->read_users($_GET['user']);
-            include('modules/user/view/update_users.php');
+            try{
+                $dao = new DAOmysql();
+                $user=$dao->read_users($_GET['user']);
+                include('modules/user/view/update_users.php');
+            }catch(Exception $e){
+                echo '<script language="javascript">alert("503 internal server error: Error al leer el usuario");</script>'; 
+                $callback = 'index.php?page=controller_user&op=list';
+                die('<script>top.location.href="'.$callback .'";</script>');
+            }
+            if(!$user){
+                echo '<script language="javascript">alert("503 internal server error: Error al leer el usuario");</script>'; 
+                $callback = 'index.php?page=controller_user&op=list';
+                die('<script>top.location.href="'.$callback .'";</script>');
+            }
         }
         
         public function deleteUser(){
@@ -118,15 +143,14 @@
                 try{
                     $dao = new DAOmysql();
                     $error=$dao->delete_user($_GET['user']);
+                    $callback = 'index.php?page=controller_user&op=list';
+                    die('<script>top.location.href="'.$callback .'";</script>');
                 }catch(Exception $e){
                     echo '<script language="javascript">alert("503 internal server error: Error al borrar el usuario");</script>'; 
                     $callback = 'index.php?page=controller_user&op=list';
                     die('<script>top.location.href="'.$callback .'";</script>');
                 }
                 if(!$error){
-                    $callback = 'index.php?page=controller_user&op=list';
-                    die('<script>top.location.href="'.$callback .'";</script>');
-                }else{
                     echo '<script language="javascript">alert("Error al borrar el usuario");</script>'; 
                     $callback = 'index.php?page=controller_user&op=list';
                     die('<script>top.location.href="'.$callback .'";</script>');

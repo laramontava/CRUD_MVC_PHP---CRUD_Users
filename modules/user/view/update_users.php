@@ -1,6 +1,6 @@
 <div class="container">
     <h3>Modificar usuario <?php echo $user->user;?></h3>
-    <form id="updateuser" name="updateuser" method="post" autocomplete="on" onsubmit="return validate_user();" action="index.php?page=controller_user&op=update">
+    <form id="updateuser" name="updateuser" method="post" autocomplete="on" onsubmit="return validate_user();" action="index.php?page=controller_user&op=update&user=<?php echo $user->user;?>">
         <table>
             <tr>
                 <td>DNI: </td>
